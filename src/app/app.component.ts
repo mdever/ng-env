@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { helloService } from './services';
+import { helloService }from './services';
 
 
 
