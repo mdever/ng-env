@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { helloService } from './services';
+
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+
+  name: string;
+  
+  updateName(newName) {
+    this.name = newName;
+  }
+
+  constructor() {
+    console.log(helloService(this.name));
+  }
 }
